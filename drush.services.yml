@@ -1,0 +1,8 @@
+services:
+  replication.commands:
+    class: \Drupal\replication\Commands\ReplicationCommands
+    arguments:
+      - '@entity_type.manager'
+      - '@module_installer'
+    tags:
+      - { name: drush.command }
