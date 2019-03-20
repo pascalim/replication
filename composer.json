@@ -5,5 +5,12 @@
   "homepage": "http://drupal.org/project/replication",
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "license": "GPL-2.0+"
+  "license": "GPL-2.0+",
+  "extra": {
+      "drush": {
+          "services": {
+              "drush.services.yml": "^9"
+          }
+      }
+  }
 }
